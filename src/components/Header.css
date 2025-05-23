@@ -1,0 +1,43 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px; /* ✅ 좌우 여백 조금 더 주기 */
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #3baa32; /* 연녹색 포인트 */
+}
+
+.search-container {
+    position: relative;
+    width: 550px;
+}
+
+.search {
+    width: 100%;
+    padding: 12px 20px;
+    padding-right: 45px;
+    border: 2px solid #3baa32;
+    border-radius: 25px;
+    font-size: 14px;
+    outline: none;
+    transition: box-shadow 0.3s ease;
+}
+
+.search:focus {
+    box-shadow: 0 0 0 3px rgba(59, 170, 50, 0.2);
+}
+
+.search-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; /* 클릭 막기 */
+}
