@@ -41,3 +41,57 @@
     transform: translateY(-50%);
     pointer-events: none; /* 클릭 막기 */
 }
+
+.header {
+    width: 100%;
+    padding: 16px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Pretendard', sans-serif;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #3baa32;
+}
+
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 999px;
+    outline: none;
+    width: 240px;
+}
+
+.search-icon {
+    position: absolute;
+    right: 12px;
+}
+
+/* ✅ 배너 위에 떠 있도록 만드는 핵심 스타일 */
+.overlay-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(6px);
+}
+
+.header.overlay-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.6); /* 살짝 투명하게 */
+    backdrop-filter: blur(6px);
+    z-index: 50; /* 이거 없으면 아래에 가려짐 */
+}
