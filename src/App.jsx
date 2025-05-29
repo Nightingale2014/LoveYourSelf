@@ -4,12 +4,13 @@ import Header from './components/Header';
 import Banner from './components/Banner';
 import TopProductList from "./components/TopProductList";
 import ProductDetail from './pages/ProductDetail';
+import MainBanner from "./components/MainBanner";
 
 function App() {
     return (
         <div>
             <Header />
-            <Banner />
+            <MainBanner /> {/* ← 여기 추가 */}
             <Routes>
                 <Route path="/" element={<TopProductList />} />
                 <Route path="/product/:id" element={<ProductDetail />} />
@@ -17,5 +18,6 @@ function App() {
         </div>
     );
 }
+
 
 export default App;
