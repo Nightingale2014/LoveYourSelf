@@ -1,20 +1,18 @@
 function MainBanner() {
     return (
-        <div className="relative w-full overflow-hidden">
+        <div className="relative w-full overflow-hidden mb-10"> {/* 하단 여백 추가 */}
             <img
                 src="/banner.png"
                 alt="Banner"
-                className="w-full h-[1000px] object-cover"
+                className="w-full h-[500px] object-cover"
             />
 
-            <div
-                className="absolute top-[420px] left-[300px] px-5 py-2.5 rounded border border-white bg-white/40 z-20"
-            >
+            <div className="absolute top-[220px] left-[60px] px-5 py-2.5 rounded border border-white bg-white/30 z-20">
                 <p
-                    className="text-7xl"
+                    className="text-4xl"
                     style={{
                         fontFamily: '"Lora", serif',
-                        WebkitTextStroke: '1px white',
+                        WebkitTextStroke: '0.3px white',
                         color: 'transparent',
                         WebkitTextFillColor: 'white',
                     }}

@@ -1,11 +1,11 @@
+/* Header.css */
 .header {
+    height: 60px;          /* 기존보다 작게 */
+    padding: 0 2rem;
+    font-size: 0.95rem;    /* 폰트 크기도 조금 줄임 */
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 20px 80px; /* ✅ 좌우 여백 조금 더 주기 */
-    background-color: #fff;
-    border-bottom: 1px solid #eee;
-    font-family: 'Noto Sans KR', sans-serif;
+    justify-content: space-between;
 }
 
 .logo {

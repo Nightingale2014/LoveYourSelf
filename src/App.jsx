@@ -7,6 +7,7 @@ import TopProductSlider from "./components/TopProductSlider";
 import PropertiesSection from "./components/PropertiesSection";
 import TopProductList from "./components/TopProductList";
 import ProductDetail from "./pages/ProductDetail";
+import "./components/App.css";
 
 function App() {
     return (
