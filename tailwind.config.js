@@ -1,15 +1,16 @@
-/** @type {import('tailwindcss').Config} */
+// tailwind.config.js
 export default {
-    content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
+    content: [
+        "./index.html",
+        "./src/**/*.{js,ts,jsx,tsx}",
+    ],
+    // tailwind.config.js
     theme: {
         extend: {
-            fontSize: {
-                '10xl': '10rem',
-            },
             fontFamily: {
-                merriweather: ['Merriweather', 'serif'],
+                playfair: ['"Playfair Display"', 'serif'],
             },
         },
     },
     plugins: [],
-};
+}

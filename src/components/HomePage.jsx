@@ -1,5 +1,8 @@
 import React from "react";
 import Header from "../components/Header";
+import TopProductSlider from "../components/TopProductSlider";
+import Properties from "../components/Properties";
+import HomePage from "./components/HomePage";
 
 export default function HomePage() {
     return (
@@ -7,20 +10,21 @@ export default function HomePage() {
             {/* 고정 헤더 */}
             <Header />
 
-            {/* 🔥 배너 이미지 + 문구 바로 삽입 */}
+            {/* 배너 */}
             <div className="relative w-full h-[400px] overflow-hidden">
                 <img
                     src="/banner.jpg"
                     alt="메인 배너"
                     className="w-full h-full object-cover"
                 />
-
             </div>
 
-            {/* 아래 콘텐츠 */}
-            <div className="p-8">
-                <h2 className="text-2xl font-semibold">여기부터 본문 콘텐츠 시작</h2>
-                <p>원하는 내용 추가~</p>
+            {/* 🔥 슬라이더 먼저 */}
+            <div className="px-8 py-12">
+                <TopProductSlider />
+            </div>
+            <div className="px-8 py-12">
+                <Properties />
             </div>
         </div>
     );

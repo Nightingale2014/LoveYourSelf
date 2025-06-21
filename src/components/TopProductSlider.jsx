@@ -37,8 +37,11 @@ export default function TopProductSlider() {
     };
 
     return (
-        <div className="w-full px-10 py-12 bg-[#fff7ee]">
-            <h2 className="text-center text-xl font-bold mb-10">TOP PRODUCTS FOR TODAY</h2>
+        <div className="w-full px-5 py-12 bg-[#fff7ee]">
+            <h2 className="text-center text-5xl font-playfair mb-10">
+                TOP PRODUCT FOR TODAY
+            </h2>
+
             <Slider {...settings}>
                 {products.map((p, index) => (
                     <div key={p.id} className="px-4">
